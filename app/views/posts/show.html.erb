@@ -1,0 +1,36 @@
+<div id="page">
+  <div id="content">
+    <div id="getting-started">
+
+
+  <H2>Subject: <%= @post.title %> </H2>
+  <H3> Posted By: <%= @post.name %> | Tags: <%= join_tags(@post) %></H3>
+
+
+<p>
+  <b>Content:</b>
+  <%= @post.content %>
+</p>
+
+
+
+
+
+<HR />
+
+<h3>Comments</h3>
+<HR />
+<%= render @post.comments %>
+
+<h3>Add a comment:</h3>
+<%= render "comments/form" %>
+ 
+ <br />
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
+
+
+    </div>
+  </div>
+</div>

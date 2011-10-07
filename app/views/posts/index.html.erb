@@ -1,0 +1,43 @@
+<div id="page">
+
+  <div id="content">
+    <div id="getting-started">
+      <h1>The Discussion Forum</h1>
+	  <HR>
+	  <h2>List of Posts</h2>
+	  <BR>
+
+
+
+<table>
+  <tr>
+    <th>Name</th>
+	<th></th>
+    <th>Title</th>
+	<th></th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+	  
+  </tr>
+
+<% @posts.each do |post| %>
+
+  <tr>
+
+    <td><%= post.name %></td>
+    <td><%= post.title %></td>
+    <td><%= post.content %></td>
+    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td><%= link_to 'Delete', post, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+
+	</div>
+  </div>
+</div>
+

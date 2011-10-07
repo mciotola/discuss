@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discuss</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body style="background: #EEEEEE;">
+
+<div id="page">
+  <div id="content">
+    <div id="getting-started">
+
+	  <h1>Welcome to Discuss!</h1>
+	  <BR />
+	  <h2>A Small Group Forum App</h2>
+	  <BR />
+	  &raquo; Go to <%= link_to "The Discussion Forum", posts_path %> | &raquo; Go to <%= link_to "Information Page", "/" %>
+	</div>
+	<BR>
+
+
+  </div>
+  
+
+
+  <%= yield %>
+
+
+
+
+    <div id="footer">
+	  <BR />
+      <P>Contact information: mpaciotola@gmail.com &nbsp; </P>
+	  <%= debug(params) if Rails.env.development? %>	
+    </div>
+
+	
+   </div>
+ </div>
+ 
+ 
+</body>
+</html>

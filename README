@@ -1,0 +1,72 @@
+== Welcome to Discuss
+
+	  DISCUSS is a simple web application to facilitate small group discussions. 
+	  It allows users to begin a discussion and then allow everyone to participate.
+	  DISCUSS is written using Ruby on Rails.
+
+== Getting Started
+
+	  1. You will need to install these files on a computer that can run Linux or Unix.
+	  Installing then in the home directory works well for the author. Just copy over the
+	  whole directly.  The files and directories should not be rearranged but must be kept 
+	  in their original directories.  Directories and files should not be renamed unless 
+	  you are doing your own development and are familiar with Rails.
+
+	  2. Using your command line tool, you should install the required gems (special 
+	  software components written in Ruby) by going to the root directory for DISCUSS and type:
+
+	  bundle install
+
+	  3. Wait until bundle install is completed. It may take awhile.  Then set up the DISCUSS 
+	  database by typing:
+
+	  rake db:migrate
+	  
+	  4. Activate the Rails server by typing:
+
+	  rails s
+
+	  5. Open your web browser and go to the following URL to locally see and use DISCUSS:
+
+	  http://localhost:3000/ 
+
+	  and if prompted, use the following authentication values of
+
+	  User Name: discuss
+
+	  Password: 17talk90
+
+	  6. Other users on your network might be able to see and use the application by using their
+	  browser to go to the URL for your computer (where DISCUSS is hosted) appended with ":3000"
+	  without the quotes. Whether this will work and for whom depends upon your network set-up.
+
+	  7. DISCUSS can be made available for users across the internet by using a publicly
+	  available server, but the set up for that is beyond this document. There are special companies
+	  that specialize in hosting Rails web applications that may work best for you.
+
+	  8. DISCUSS is only intended for use by a limited, trusted group of people. You will need to
+	  give them a username and password. For simplicity, everyone can share the same user name and 
+	  password. The default values are shown above. You can customize those values by editing line 3
+	  in each of the following files:
+
+	  posts_controller.rb
+	  comments_controller.rb
+
+	  Or you can remove these lines and add your own authentication system.
+
+== Instructions for Use
+
+	  To start participating in discussions, click on "The Discussion Forum" link.
+	  Start a discussion thread by creating a Post. Discuss posts using adding Comments
+	  (also known as notes). Deleting Posts also deletes associated comments, 
+	  so this should be avoided when possible.
+	  Reply to comments by creating additional comments.
+	  
+== About
+	  DISCUSS is written using Ruby 1.9.2 with Rails 3.1.0. It draws heavily from the Rails tutorial,
+	  but then branches off by experimenting with CSS and other interface elements.
+	  Developed by Mark Ciotola. See contact information at bottom of page.</P>
+	  
+== Copyright Notice</h2>
+	  <P>DISCUSS is subject to the GNU License.
+
